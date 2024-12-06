@@ -1,0 +1,167 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh; /* Ensures body takes full height */
+}
+.footer-text {
+    font-size: 0.8em; /* Smaller footer text */
+}
+.typing-animation {
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block; /* Ensures that the width is calculated correctly */
+    animation: typing 6s steps(50, end) forwards, blink-caret 0.75s step-end infinite; /* Adjust for full text */
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; /* Full width for entire text */ }
+}
+@keyframes blink-caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+}
+.clock {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+header {
+    background: #5189c4d8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 80px;
+    margin: 0 auto;
+    
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    flex: 1; /* Allows container to grow and fill available space */
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(78, 40, 40, 0.637);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    min-height: 100%;
+}
+
+.service {
+    background: rgba(54, 50, 50, 0.719);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.service:hover {
+    transform: scale(1.07);
+}
+.blog-image:hover {
+    transform: scale(1.07);
+    transition: transform 0.2s;
+}
+
+.blog {
+    margin: 40px 0;
+}
+
+.blog h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.blog-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blog-image {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+}
+massage-request-form {
+    text-align: justify;
+}
+button{
+    border-radius: 25%;
+    color: #ffffff;
+    border: none;
+    margin: 0%;
+    background-color: rgba(0, 123, 255, 0.178);
+}
+button:hover{
+    color: #ffffff;
+
+}
+button::after {
+    background-color: rgba(226, 2, 178, 0.3);
+    transform: scaleX(0);
+}
+.animated-text{
+    animation: fade-in 3s ease-in-out
+    infinite;
+}
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100%{
+            opacity: 100%;
+        }
+    
+}
+footer {
+    background-color: #5189c4bd;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position:relative;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcy Cyber Security Hub</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <style>
+      
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo2.png" alt="Logo" class="logo"><br><br>
+  <a href="123.jpg"><button style="background-color: rgba(240, 248, 255, 0);"><h1 style="color: rgb(255, 255, 255);">MARCY CYBER SECURITY HUB</h1></button></a>
+  <nav>
+      <a href="services.html">SERVICES</a>
+      <a href="blog.html">BLOG</a>
+      <a href="contact.html">CONTACT US</a>
+  </nav>
+</header>
+
+<div class="container">
+    <a href="123.jpg"><button><h1>Welcome to Marcy Cyber Security Hub</h1></button></a>
+    <p><b class="typing-animation">🔧💻 Your One-Stop Solution for IT and Security Needs!</b></p>
+    <div class="clock" id="clock"></div>
+    
+    <p>Let us handle your tech and security needs with excellence! 💙</p>
+</div>
+
+<footer>
+  <p class="footer-text">&copy; 2024 Marcy Cyber Security Hub.
+      <br><a href="mailto:marcycyber@gmail.com">marcycyber@gmail.com</a>
+      <br><br>+260 97 9219748 | 0768896047
+  </p>
+</footer>
+
+<script>
+  function updateClock() {
+      const now = new Date();
+      const utcOffset = 2; // Zambia is UTC+2
+      const zambiaTime = new Date(now.getTime() + (utcOffset * 60 * 60 * 1000));
+      const hours = String(zambiaTime.getHours()).padStart(2, '0');
+      const minutes = String(zambiaTime.getMinutes()).padStart(2, '0');
+      const seconds = String(zambiaTime.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `Zambia Time (GMT+2): ${hours}:${minutes}:${seconds}`;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); // initial call
+</script>
+</body>
+</html>
